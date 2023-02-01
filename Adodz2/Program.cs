@@ -54,7 +54,7 @@ namespace Adodz2
 				
 			}
 			catch (Exception ex)
-			{
+			{ 
 				Console.WriteLine(ex.Message);
 			}
 			Console.ReadLine();
