@@ -34,7 +34,7 @@ namespace Adodz2
 				//Console.WriteLine(builderCounter.GetUpdateCommand().CommandText);
 				//Console.WriteLine(builderCounter.GetDeleteCommand().CommandText);
 				
-				Console.WriteLine(adapterCounter.InsertCommand);
+				Console.WriteLine(adapterCounter.InsertCommand.CommandText);
 
 				//DataRow dr = setCounter.Tables[0].NewRow();
 				//dr.SetField(0, 2);
@@ -45,12 +45,12 @@ namespace Adodz2
 				//adapterCounter.Update(setCounter);
 
 				
-				for (int i = 4; i < 100; i++)
-				{
+				//for (int i = 4; i < 100; i++)
+				//{
 					
-					setCounter.Tables[0].Rows.Add(i, "Много пластика", 40, DateTime.Now);
-				}
-				adapterCounter.Update(setCounter);
+				//	setCounter.Tables[0].Rows.Add(i, "Много пластика", 40, DateTime.Now);
+				//}
+				//adapterCounter.Update(setCounter);
 				
 			}
 			catch (Exception ex)
